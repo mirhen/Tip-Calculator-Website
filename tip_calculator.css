@@ -1,0 +1,54 @@
+h1 {
+    background-color: #fff;
+    margin: -10px;
+    padding: 35px;
+    color: white;
+    font-family:  Tahoma;
+    font-size: 45px;
+    text-align: center;
+    /*font-weight: normal;*/
+}
+
+.calculator {
+    /*background-color: #FF5733;*/
+    color: white;
+    font-family: TruenoLight;
+    font-style: normal;
+    font-size: 40px;
+}
+.inputField {
+    color: white;
+}
+input {
+    background-color: transparent;
+    border: 0px;
+    font-size: 40px;
+    padding: 10px,0;
+    font-family: Tahoma;
+    width: 200px;
+    outline: none;
+}
+input:active {
+    /*border: none;
+    background-color: black;*/
+}
+
+button {
+    display:block;
+    margin:0 auto;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    font-size: 25px;
+    border-width: 2px;
+    font-family: Tahoma;
+    outline: none;
+}
+body {
+    background-image: url(mountain_background.png);
+}
+
+#tipAmount {
+    font-weight: normal;
+    text-align: center;
+}

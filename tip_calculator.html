@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tip_calculator.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 style="background-color:rgba(0, 0, 0, 0.2)">Tip Calculator</h1>
+        </nav>
+    </header>
+    <div class="calculator">
+        <p>Amount: $<input type="text" id="amount" class="inputField"></p>
+
+        <p>Tip Percentage: %<input type="text" id="tipPercent" class="inputField"></p>
+
+        <p><button id="button">Calculate</button></p>
+
+        <h3 id="tipAmount"></h3>
+    </div>
+    <!-- JS Starts Here! -->
+    <script src=tip_calculator.js></script>
+    <script>
+        var amount = document.getElementById("amount")
+        var tipPercent = document.getElementById("tipPercent")
+        var tipAmount = document.getElementById("tipAmount")
+        var button = document.getElementById("button")
+
+        button.addEventListener("click", function() {
+            var total = amount.value * tipPercent.value / 100;
+            tipAmount.innerHTML = "Tip is $" + total
+
+
+
+        });
+    </script>
+</body>
+
+</html>
